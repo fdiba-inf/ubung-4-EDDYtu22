@@ -8,16 +8,16 @@ public class MinIndex {
         //System.out.println("Enter array length: ");
         int size = input.nextInt();
         double array[] = new double[size];
-        double minValue = 1.7976931348623157E308;
+        int minIndex = 0;
 
         for (int i = 0; i < size; i++) {
-            //System.out.println("Enter value for " + i + " element: ");
             array[i] = input.nextDouble();
-            if (array[i] < minValue) {
-                minValue = array[i];
             }
-
+        for (int i = 1; i < size; i++) {
+            if (array[i]<array[i-1]) {
+                minIndex = i;
+            }
         }
-        System.out.println("Min index: "  + minValue);
+        System.out.println("Min index: "  + minIndex);
     }
 }
