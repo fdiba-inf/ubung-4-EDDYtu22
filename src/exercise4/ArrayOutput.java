@@ -9,7 +9,7 @@ public class ArrayOutput {
         int size = input.nextInt();
         int[] array = new int[size];
         String space = " ";
-        String spacenext = " ";
+        String spaceNext = " ";
 
 
         for (int i = 0; i < array.length; i++) {
@@ -19,8 +19,8 @@ public class ArrayOutput {
         System.out.println(array[0]);
         for (int i = 1; i < array.length; i++) {
 
-            System.out.println(spacenext + array[i]);
-            spacenext = spacenext + space;
+            System.out.println(spaceNext + array[i]);
+            spaceNext = spaceNext + space;
 
 
         }

@@ -13,7 +13,7 @@ public class ArrayInput {
 
         for (int index = 0; index < size; index++) {
             System.out.print("Enter value for " + index + " element: ");
-            array[index]=input.nextInt();
+            array[index] = input.nextInt();
 
         }
         System.out.println("Numbers: " + Arrays.toString(array));
