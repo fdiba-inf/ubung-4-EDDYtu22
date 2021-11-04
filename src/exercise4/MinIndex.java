@@ -14,8 +14,10 @@ public class MinIndex {
             array[i] = input.nextDouble();
             }
         for (int i = 1; i < size; i++) {
-            if (array[i]<array[i-1]) {
+            if (array[i] < array[i-1]) {
                 minIndex = i;
+            } else {
+                minIndex = 0;
             }
         }
         System.out.println("Min index: "  + minIndex);
